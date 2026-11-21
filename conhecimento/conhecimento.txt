@@ -1,0 +1,24 @@
+# Alethea PC Care: base de erros conhecidos (fonte). Publicar com publicar_conhecimento.ps1 (assina e envia ao repositório público).
+# Formato: versao|AAAA-MM-DD   bsod|0xCODIGO|NOME|causa provável   wu|0xCODIGO|o que significa
+# O que está aqui vale antes da lista que vem no programa; texto curto, em português, sem jargão desnecessário.
+versao|2026-11-21
+
+# telas azuis (código da verificação de bug)
+bsod|0x00000019|BAD_POOL_HEADER|memória ou driver com defeito
+bsod|0x00000024|NTFS_FILE_SYSTEM|disco ou sistema de arquivos com problema
+bsod|0x0000003F|NO_MORE_SYSTEM_PTES|driver que consome memória do sistema sem devolver
+bsod|0x0000004E|PFN_LIST_CORRUPT|memória RAM ou driver com defeito
+bsod|0x0000008E|KERNEL_MODE_EXCEPTION_NOT_HANDLED|driver, memória ou hardware com defeito
+bsod|0x000000A5|ACPI_BIOS_ERROR|BIOS desatualizada ou incompatível com o Windows
+bsod|0x000000BE|ATTEMPTED_WRITE_TO_READONLY_MEMORY|driver com defeito
+bsod|0x000000C4|DRIVER_VERIFIER_DETECTED_VIOLATION|driver com defeito
+bsod|0x000000C5|DRIVER_CORRUPTED_EXPOOL|driver com defeito
+
+# Windows Update
+wu|0x80070422|o serviço do Windows Update está desativado; ative o serviço Windows Update e tente de novo
+wu|0x8024001E|o serviço do Windows Update estava sendo encerrado; reinicie o PC e tente de novo
+wu|0x80244018|o acesso ao servidor de atualização foi recusado (proxy, VPN ou firewall)
+wu|0x800705B4|a operação demorou demais; confira a internet e tente de novo
+wu|0x80073701|componentes do Windows ausentes ou danificados
+wu|0x8007371B|componentes do Windows ausentes ou danificados
+wu|0x80070BC9|o Windows pede para reiniciar antes de concluir a atualização
